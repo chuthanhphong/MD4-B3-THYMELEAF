@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+
+</head>
+<body>
+<h3>View Product</h3>
+<p>
+    <a th:href="@{/product/create}"> ADD NEW PRODUCT</a>
+</p>
+<div id="detail">
+    <div class="cusdetail">
+        <label>ProductName:</label>
+        <label th:text="${product.name}"></label>
+    </div>
+    <div class="cusdetail">
+        <label>ProductColor:</label>
+        <label th:text="${product.colorl}"></label>
+    </div>
+    <div class="cusdetail">
+        <label>ProductCategory:</label>
+        <label th:text="${product.category}"></label>
+    </div>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+
+
+
+
+
+
+    </form>
+
+</div>
+</body>
+</html>
